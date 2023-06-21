@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tag</title>
+</head>
+
+<body>
+    <form>
+        text <input type="text" placeholder="텍스트를 입력해주세요" value="안녕">
+        <label for="email" >email</label>
+        <input type="email" id="email" />
+
+        <label for="">
+            비밀번호
+            <input type="password" placeholder="비밀번호 입력" value="안녕"/>
+        </label>
+        <br>
+        숫자<input type="number">
+        <input type="color">
+        <input type="range">
+        <input type="title">
+        <input type="date">
+        <input type="file">
+        <!-- 타입 button은 제출 x -->
+        <input type="button" value="버튼">
+
+        <!-- 타입 submit과 버튼은 제출 -->
+        <input type="submit" value="버튼">
+        <button>버튼</button>
+
+        <br/>
+
+        <h5>다음중 이미지태그의 속성은</h5>
+        <input type="radio" name="radio"> title
+        <input type="radio" name="radio"> value
+        <input type="radio" name="radio"> alt
+        <input type="radio" name="radio"> mouse
+
+        <br/>
+
+        <h5>input타입의 속성이 아닌것은</h5>
+        <input type="checkbox" name="checkbox" id="text"> <label for="text">text</label>
+        <input type="checkbox" name="checkbox" id="img"> <label for="img">img</label>
+        <input type="checkbox" name="checkbox" id="click"> <label for="click">click</label>
+        <input type="checkbox" name="checkbox" id="date"> <label for="date">date</label>
+
+        <br/>
+        <!-- select -->
+        <select>
+            <OPTGroup label="라지">
+                <option value="">XXL</option>
+                <option value="">XL</option>
+                <option value="">L</option>
+            </OPTGroup>
+
+            <OPTGroup label="스몰">
+                <option value="">S</option>
+                <option value="">SS</option>
+                <option value="">SSS</option>
+            </OPTGroup>
+
+            <option value="">XL</option>
+            <option value="">L</option>
+            <option value="">M</option>
+        </select>
+
+        <TEXTArea cols="30" rows="10" placeholder="placeholder입니다"></TEXTArea>
+    </form>
+</body>
+
+</html>

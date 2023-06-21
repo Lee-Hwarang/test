@@ -1,0 +1,57 @@
+section{
+    border: 1px solid blue;
+
+}
+
+article{
+    height: 100px;
+    border: 1px solid red;
+}
+
+
+/*직계자식 선택자 > */
+
+/* 첫번째 section을 선택함 */
+.first > h3{
+    color: white;
+    text-align: center;
+    background-color: blue;
+
+} 
+
+.second > h3{
+    color: #005;
+    background-color: #855;
+
+}
+
+/* 후손선택자 blank+name */
+
+/* 첫번째 section의 li 선택 */
+.first li{
+    background-color: pink;
+    font-size: 10px;
+}
+
+.first > article > ul > li{
+    background-color: plum;
+    
+}
+
+/* 인접형제선택자  + name */
+#fairy + li{
+    background-color: black;
+    color: wheat;
+
+}
+
+#fairy ~ li{
+    background-color: black;
+    color: rgb(249, 162, 0);
+
+}
+
+/* 일치선택자 */
+article.first{
+    background-color: rgb(0, 255, 76);
+}

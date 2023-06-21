@@ -71,6 +71,41 @@
         </ul>
         <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia magni labore debitis nulla itaque expedita enim facilis reiciendis iure amet. Repellat praesentium perferendis porro sapiente et quisquam sunt, magni dicta.</div>
     </details>
+
+    <h3>img & a 태그</h3>
+    <!-- img 속성
+        - src : 이미지 경로
+        - alt : 이미지 설명
+     -->
+     <!-- a 태그 속성
+        - href : 이동경로  
+        - target : 웹페이지가 열릴위치
+        - title : a태그에 대한 설명 -->
+    
+    <img src="https://www.animals.or.kr/api/files/images/51386-cb98b35c-a5ac-484c-b365-f73e8263bd05.png" 
+    alt="세계 햄스터의 날"
+    width = "200">
+<!-- 상대경로와 절대경로 
+    - 상대경로 : 현재위치로부터 찾아옴
+    - 절대경로 : 상단의 폴더부터 차례대로 경로를 찾는것 -->
+    <img src="web/img/ham.jpg" alt="햄" width = "200">
+    <img src="./img/ham.jpg" alt="햄" width = "400" >
+
+<br>
+    <a href="https://www.naver.com" target = "_blank" 
+    title = "mouse 커서를 올리면 나타나는 문장입니다" >네이버로 이동</a>
+
+
+    <br>
+    <br>
+    <a href="./cafe.html">카페메뉴</a>
+    <a href="../test/cafe.html">카페메뉴(상대)</a>
+
+    <br>
+    <br>
+    <a href="https://www.google.com/" target = "_blank" > <img src="./img/ham.jpg" alt="햄" width = "200"> </a>
+
+
 </body>
 
 </html>

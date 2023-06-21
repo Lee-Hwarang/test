@@ -1,0 +1,40 @@
+body {
+    height: 2000px;
+}
+
+.background-img {
+    width: 500px;
+    height: 800px;
+    /* background: red; */
+    border: solid black;
+
+    background-image: url("../img/small.png");
+    background-repeat: no-repeat;
+
+    /* background repeat 
+    repeat(default)
+    repeat-x
+    repeat-y
+    no-repeat
+    */
+
+
+    background-position: center;
+    /* background-position: center top;
+    background-position: 100px 100px; */
+
+    /* background-position 
+        (x축 ,  y축)
+        키워드(top, bottom, left, right, center) 단위와 함께쓰는    
+    */
+
+    background-size: 50px;
+    background-size: 100px 300px;
+    /* 짧은 */
+    background-size: contain;
+    /* 넓은 */
+    background-size: cover;
+
+    background-attachment: fixed;
+
+}

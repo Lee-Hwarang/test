@@ -1,0 +1,46 @@
+.div1{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: skyblue;
+    line-height: 100px;
+}
+
+/* 가상클래스 선택자
+
+1. hover
+2. active 요소에 마우스 클릭 or 엔터가 눌리는 동안
+3. visitived 요소가 링크일때, 방문 여부를 스타일로 구분 (a tag)
+4. fosus 
+5. checked : 요소가 체크 되었을때 (radio, checkbox)
+
+selector:propery{}
+
+*/
+
+.div1:hover{
+    background-color: pink;
+    height: 150px;
+}
+
+.div1:active{
+    background-color: orange;
+    width: 150px;
+}
+
+input:focus{
+    background-color: blueviolet;
+    color: white;
+    outline-color: aqua;
+
+}
+
+a:visited{
+    color: #ccc;
+    
+}
+
+input#rabit:checked + label{
+    background-color: palevioletred;
+    color: white;
+}

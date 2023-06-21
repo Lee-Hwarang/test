@@ -1,0 +1,35 @@
+
+p.lion{
+    background-color: red;
+}
+
+
+/* 사파리 안에 사자만 */
+.zoo ul > .lion{
+    background-color: yellowgreen;
+}
+
+.zoo #tiger{
+    background-color: yellow;
+}
+
+.lion {
+    color: sienna;
+}
+
+/* 동물원 안에 사자만 */
+.zoo .lion{
+   font-weight: bold;
+}
+
+
+/* 호랑이 뒤에 있는 팬더 */
+#tiger + li{
+    background-color: skyblue;
+
+}
+
+/* 사파라 사자뒤에 있는 사육사 모두 */
+.lion ~ li{
+    background-color: orange;
+}

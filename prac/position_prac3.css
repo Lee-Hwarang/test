@@ -1,0 +1,76 @@
+div {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    /* 뷰포트 기준으로 움직임 */
+    position: absolute;
+
+}
+
+.circle1 {
+    background-color: #3dc684;
+    top: 180px;
+    left: 180px;
+
+}
+
+.eye-white {
+    background-color: #ffffff;
+
+    width: 40px;
+    height: 40px;
+    z-index: 9;
+
+}
+
+.eye-black {
+    background-color: #000000;
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    z-index: 10;
+}
+
+.circle2 {
+    background-color: #4168a3;
+    top: 300px;
+    left: 300px;
+}
+
+.circle3 {
+    background-color: #ffeb88;
+    top: 300px;
+    left: 300px;
+}
+
+.circle4 {
+    background-color: #ffb680;
+    top: 160px;
+    left: 160px;
+}
+
+.circle5 {
+    background-color: #b5e66b;
+    top: 230px;
+    left: 200px;
+}
+
+.circle6 {
+    background-color: #59c7de;
+    top: 280px;
+    left: 240px;
+}
+
+.circle7 {
+    background-color: #ff7c7c;
+    top: 300px;
+    left: 300px;
+    z-index: 11;
+}
+
+img {
+    position: absolute;
+    top: 300px;
+
+}
