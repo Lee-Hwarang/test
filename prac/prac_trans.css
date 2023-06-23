@@ -1,0 +1,78 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(201, 228, 255);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 2s;
+
+
+
+}
+
+
+
+.box1:hover {
+    /* transition 
+    transtion-property: 속성이름
+        어떤 속성에 transition효과를 줄지 
+    transtion duration(필수속성)
+        지속시간 {n}s
+    transition timeing function 시간함수
+    transition delay 시작시간을 얼마나 늦출지 
+        딜레이시간 {n}s
+    */
+
+    /* width: 400px; */
+    /* transition-property: width;
+    transition-duration: 1s;
+    /* transition-timing-function: linear; */
+    /* transition-delay: 1s;
+    transition: width 1s ease; */
+
+    /* transition: property duration timingfunction delay; */
+    transform: translate(50px) scaleX(2);
+
+
+}
+
+/* 기울어지면서 늘어나기 */
+
+.box2:hover {
+
+
+
+    /* transform-origin: bottom center; */
+    transition: translate(50%, 0) skewX(-45deg);
+    opacity: 0.5;
+    height: 150px;
+    background-color: blueviolet;
+
+}
+
+
+/* 네모->원(빨강)으로 이동 */
+.box3:hover {
+
+    border-radius: 50%;
+    transform: translateX(400px) rotate(360deg);
+
+    background-color: blueviolet;
+
+}
+
+body {
+    perspective: 500px;
+
+}
+
+.box4:hover {
+
+    /* perspective 속성은 적용시킬 요소의 부모에 적용해야함 */
+
+    background-color: rgb(210, 255, 46);
+
+    transform: translateY(50px) rotateY(360deg) scale(2);
+
+
+}
