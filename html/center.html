@@ -31,6 +31,35 @@
             top: 0;
             bottom: 0;
         }
+
+
+        /* flex를 이용한 가운데 정렬 */
+
+
+        .parent2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        /* position & transform */
+
+        .parent3 {
+            /* 기준점 */
+            position: relative;
+        }
+
+        .parent3>.child {
+            position: absolute;
+
+            /* 꼭지점이 중앙으로 옴 */
+            left: 50%;
+            top: 50%;
+
+            /* 분홍박스의 50% */
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 
