@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+
+    /* 행 ->  */
+    grid-template-rows: 100px 100px 100px;
+
+    /* 1:1::2:2로 배열됨  */
+    /* grid-template-columns: 1fr 1fr 1fr 2fr 2fr; */
+    grid-template-columns: repeat(3, 50px);
+
+    /* minmax(100px, auto)의 의미는 최소한 100px, 
+    최대는 자동으로(auto) 늘어나게.. 입니다. 
+    즉 아무리 내용의 양이 적더라도 최소한 높이 100px은 확보하고, 
+    내용이 많아 100px이 넘어가면 알아서 늘어나도록 처리해 준 예시입니다. */
+    /* grid-template-rows: repeat(5, minmax(100px, auto)); */
+
+    row-gap: 10px;
+    column-gap: 20px;
+
+
+
+    /* justify-content */
+
+    /* align-content */
+    /* justify-items */
+    /* align-items */
+
+
+}
+
+.item {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.container>.item:nth-child(1) {
+    background-color: #f94144;
+
+}
+
+
+
+.container>.item:nth-child(2) {
+    background-color: #f3722c;
+
+}
+
+.container>.item:nth-child(8) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 1/2;
+    z-index: 999;
+    background-color: aqua;
+}
+
+.container>.item:last-child {
+    background-color: purple;
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+    /* grid-column: 1/span1; */
+}
+
+.container>.item:nth-child(7) {
+    background-color: pink;
+    align-self: flex-start;
+}
+
+.container>.item:nth-child(8) {}
+
+.container>.item:nth-child(8) {}
+
+.container>.item:nth-child(8) {}
