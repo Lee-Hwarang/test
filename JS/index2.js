@@ -172,8 +172,6 @@ let engScore = prompt("영어점수를 입력하세요");
 mathScore = Number(mathScore);
 engScore = Number(engScore);
 
-console.log(typeof String(mathScore));
-
 let avg = (mathScore + engScore) / 2;
 console.log(avg);
 
