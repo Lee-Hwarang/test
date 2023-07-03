@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>요소 선택하기</title>
+
+    <!-- 위에 쓰면 getElmentById시 오류남 왜? 
+        스크립트 먼저 읽고 html을 읽어서 아직바디가 생성되지 않음 -->
+    <!-- script를 맨밑에 쓰거나 defer 쓰기 -->
+    <!-- defer 외부에서 가져올때 사용가능, 맨밑에 둘 시 속도저하 문제를 해결함 -->
+    <SCript defer src="querySelector.js"></SCript>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            border: 1px solid #444;
+            margin: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        #green {
+            background-color: greenyellow;
+        }
+
+        #red {
+            background-color: tomato;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .pink{$}*4 -->
+    <div class="pink">1</div>
+    <div class="pink">2</div>
+    <div class="pink">3</div>
+    <div class="pink">4</div>
+    <div id="green" class="others">green</div>
+    <div id="red" class="others">red</div>
+    <!-- name속성은 보통 input에 -->
+    <input type="text" name="id">
+    <input type="btn" name="id">
+</body>
+
+</html>

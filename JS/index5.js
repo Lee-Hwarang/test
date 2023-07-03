@@ -82,5 +82,5 @@ const areaNum = {
   Jeju: "064",
 };
 
-console.log(Object.keys(areaNum));
-console.log(Object.values(areaNum));
+console.log(Object.keys(areaNum)); //키만 배열로
+console.log(Object.values(areaNum)); //값만 배열로
