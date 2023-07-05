@@ -1,7 +1,7 @@
 console.log(document);
 console.log(document.head);
 console.log(document.title);
-console.log(document.body);
+console.log("바디" + document.body);
 console.log(document.URL);
 
 //getElementById
@@ -35,8 +35,10 @@ const divs = document.querySelectorAll("div");
 console.log(divs);
 
 const pinks = document.querySelectorAll(".pink");
-console.log(pinks);
+console.log(pinks + "dddddd");
 console.log(pinks[2]);
+
+console.log("핑크스의 길이" + pinks.length);
 
 for (let i = 0; i < pinks.length; i++) {
   console.log(pinks[i]);
@@ -44,4 +46,19 @@ for (let i = 0; i < pinks.length; i++) {
 
 for (let pink of pinks) {
   console.log("for of" + pink);
+}
+
+let sum2 = 0;
+for (i = 1; i < 11; i++) {
+  sum2 = sum2 + i;
+}
+console.log(sum2);
+
+// Hello world 세번찍기
+// for(초기식; 조건식; 증감식;){
+//     반복할문장;
+// }
+
+for (i = 0; i <= 2; i++) {
+  console.log("hi" + i);
 }
