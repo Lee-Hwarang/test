@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script defer src="index3.js"></script>
+
+    <style>
+        .p-msg {
+            cursor: pointer;
+        }
+
+        .hover {
+            font-size: 40px;
+            transition: all 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="p-msg">안녕</p>
+    <!-- ul.numbers>li.num*4 -->
+    <ul class="numbers">
+        <li class="num">1</li>
+        <li class="num">2</li>
+        <li class="num">3</li>
+        <li class="num">4</li>
+    </ul>
+
+    <div class="div-hover">hover</div>
+    <h3>키보드이벤트</h3>
+    <input type="text" class="input-key">
+    <button type="button">클릭</button>
+
+    <h3>폼이벤</h3>
+    <form id="form">
+        <input type="text" id="todo">
+        <button>제출</button>
+    </form>
+    <ul class="todos"></ul>
+
+</body>
+
+</html>

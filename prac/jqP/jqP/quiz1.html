@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <title>실습1. 이미지 바꾸기</title>
+
+  <!-- TODO: jQuery CDN 추가 -->
+</head>
+
+<body>
+  <h1>이미지 바꾸기</h1>
+
+  <img class="fruit" src="./image/q.jpg" alt="물음표" width="300" height="200" />
+  <br />
+  <button class="btn apple">사과</button>
+  <button class="btn bananas">바나나</button>
+  <button class="btn grapes">포도</button>
+  <button class="btn peaches">복숭아</button>
+
+  <script>
+
+    //해당클래스 클릭시 src를 변경하기
+    // $(".btn.apple").click("click", function () {
+    //   $(".fruit").attr("src", "./image/apple.jpg")
+    // })
+    // $(".btn.bananas").click("click", function () {
+    //   $(".fruit").attr("src", "./image/bananas.jpg")
+    // })
+    // $(".btn.grapes").click("click", function () {
+    //   $(".fruit").attr("src", "./image/grapes.jpg")
+    // })
+    // $(".btn.peaches").click("click", function () {
+    //   $(".fruit").attr("src", "./image/peaches.jpg")
+    // })
+
+
+    $(".btn").click("click", function () {
+      let imgName;
+      if ($("this").hasClass("apple")) {
+
+      } else if ($("this").hasClass("bananas")) {
+        imgName = "bananas";
+      } else if ($("this").hasClass("grapes")) {
+        imgName = "grapes";
+      }
+      else if ($("this").hasClass("peaches")) {
+        imgName = "peaches";
+      }
+
+      $(".fruit").attr("src", `./image/${imgName}.jpg`)
+    })
+
+
+
+  </script>
+</body>
+
+</html>

@@ -10,6 +10,7 @@ ul {
 
 
 
+
 header {
     width: 100%;
     height: 100px;
@@ -19,7 +20,7 @@ header {
 }
 
 
-
+/*
 /* 헤더 높이 768보다 클때 100px   */
 
 header .inner {
@@ -36,13 +37,17 @@ header .inner {
 }
 
 /* 이글루 */
-.fa-solid.fa-igloo {
-    position: absolute;
-    line-height: 100px;
+header .inner i {
+    /* position: absolute;
     color: white;
     font-size: 40px;
-    margin-left: 120px;
-
+    margin-left: 120px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 40px;
 
 }
 
@@ -61,19 +66,9 @@ header .inner ul li {
 
 }
 
-
-
-.fa-solid.fa-bars {
-    display: none;
-}
-
-
 header .small-menu {
     display: none;
 }
-
-
-
 
 
 
@@ -81,7 +76,6 @@ header .small-menu {
 
 
 @media screen and (max-width:768px) {
-
 
     header {
         width: 100%;
@@ -91,13 +85,8 @@ header .small-menu {
         position: fixed;
     }
 
-    header.click {
-        display: block;
-    }
-
-
     /* 이글루 */
-    .fa-solid.fa-igloo {
+    header .inner i {
         position: relative;
         display: flex;
         justify-content: center;
@@ -111,57 +100,52 @@ header .small-menu {
 
     }
 
-    /* 메뉴바 아이콘 */
-    .fa-solid.fa-bars {
-        line-height: 60px;
-        position: absolute;
-        right: 5vw;
-        cursor: pointer;
-        justify-content: flex-end;
-        display: flex;
-        margin-right: 20px;
-
-
-    }
-
     /* 메뉴 */
     header .inner ul {
         display: none;
 
     }
 
-    header .inner.fa-solid.fa-bars {
-        display: none;
-    }
-
-    header .click {
-        display: block;
-    }
-
-
-    header .small-menu li {
+    header .small-menu {
         background-color: rgb(240, 248, 255);
+        display: block;
         list-style-type: none;
 
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 40px;
-        line-height: 40px;
 
 
+    }
+
+
+    header .small-menu:hover {
+        background-color: pink;
+        display: block;
+        list-style-type: none;
+
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    header .small-menu li {
+
+        margin: 10px 0px
+    }
+
+    header .small-menu li:hover {
+        background-color: pink;
+        margin: 10px 0px
     }
 
 
     header .small-menu li:hover {
-        background-color: rgb(175, 218, 255);
-        list-style-type: none;
-
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 10px 0px;
 
 
     }

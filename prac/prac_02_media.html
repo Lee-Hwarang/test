@@ -7,19 +7,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="prac_02_media.css">
     <script src="https://kit.fontawesome.com/ef04f1ef99.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <header>
         <div class="inner">
             <i class="fa-solid fa-igloo"></i>
+
+
+
             <ul class="menu">
                 <li>메뉴1</li>
                 <li>메뉴2</li>
                 <li>메뉴3</li>
                 <li>메뉴4</li>
             </ul>
+            <i class="fa-solid fa-bars"></i>
         </div>
+
 
         <div class="small-menu">
             <li>메뉴1</li>
@@ -30,5 +36,27 @@
 
     </header>
 </body>
+
+<script>
+    // 메뉴아이콘 클릭하면
+    //small메뉴가 보여야함
+
+    const menu = document.querySelector(".fa-solid.fa-bars")
+    const hideMenu = document.querySelector(".small-menu");
+    console.log(menu)
+
+    menu.addEventListener("click", function () {
+        //클릭 클래스 부여하기
+
+        hideMenu.classList.toggle("click")
+        console.log("클릭")
+
+        ///
+
+    })
+
+
+
+</script>
 
 </html>

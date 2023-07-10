@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script defer src="index2.js"></script>
+    <style>
+        .color-blue {
+            color: blue;
+        }
+
+        .fs-50 {
+            font-size: 50px;
+        }
+
+        .bg-pink {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>jQ 메소드</h1>
+
+    <h2>val()</h2>
+    <input type="text" />
+    <button type="button" onclick="getValue()"> 값 가져오기</button>>
+    <button type="button" onclick="setValue()"> 값 설정하기</button>>
+    <hr />
+
+
+    <h2>css()</h2>
+    <span>안녕</span>
+    <br>
+    <button type="button" onclick="changeCssJs()">js로 변경</button>
+    <button type="button" onclick="changeCssJq()">jq로 변경</button>
+    <button type="button" onclick="getCssJq()">jq로 css값 가져오기</button>
+
+    <h2>attr()</h2>
+    <a href="https://www.google.com" target="_blank">google</a>
+    <br>
+    <button type="button" onclick="changeAttrJs()">js로 변경</button>
+    <button type="button" onclick="changeAttrJq()">jq로 변경</button>
+
+
+
+    <h2>text()</h2>
+    <p class="p-html">안녕하세요</p>
+
+    <h2>html()</h2>
+
+
+
+
+    <h2>요소 추가</h2>
+    <ul class="colors">
+        <li class="orange">orange</li>
+        <li class="green">green</li>
+        <li class="navy">navy</li>
+    </ul>
+    <h4>요소 추가 : append()</h4>
+    <button type="button" onclick="appendJs();">appendJs</button>
+    <button type="button" onclick="appendJq();">appendJq</button>
+
+    <h4>요소 추가 : prepend()</h4>
+    <button type="button" onclick="prependJs();">prependJs</button>
+    <button type="button" onclick="prependJq();">prependJq</button>
+
+    <h4>요소 추가 : before()</h4>
+    <button type="button" onclick="beforeJs();">beforeJs</button>
+    <button type="button" onclick="beforeJq();">beforeJq</button>
+
+    <h4>요소 추가 : after()</h4>
+    <button type="button" onclick="afterJs();">afterJs</button>
+    <button type="button" onclick="afterJq();">afterJq</button>
+
+    <h2>요소 삭제</h2>
+    <h4>요소 삭제: remove()</h4>
+    <h4>요소 삭제: empty()</h4>
+
+    <h2>요소 탐색</h2>
+    <div class="ancesotr">
+        <div class="parent">
+            <div class="child1">자식1</div>
+            <div class="child2">자식2</div>
+            <div class="child3">자식3</div>
+        </div>
+    </div>
+    <button type="button" onclick="findParent()">부모</button>
+    <button type="button" onclick="findParents()">조상</button>
+    <button type="button" onclick="findNext()">다음형제</button>
+    <button type="button" onclick="findPrev()">이전형ㅈㅔ</button>
+    <button type="button" onclick="findChildren()">모든자식</button>
+
+    <h2>클래스 조작</h2>
+    <p id="hi" class="color-blue">안녕</p>
+    <button type="button" onclick="addClass()">클래스추가</button>
+    <button type="button" onclick="removeClass()">클래스 삭제</button>
+    <button type="button" onclick="hasClass()">클래스 유무확인</button>
+    <button type="button" onclick="toggleClass()">클래스토글</button>
+
+</body>
+
+</html>

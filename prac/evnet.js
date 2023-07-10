@@ -108,7 +108,8 @@ todoForm.addEventListener("submit", function (event) {
   // li.textContent = todo;
   li.append(todo); //textcontent나 append나 같읒ㅁ
   todos.append(li);
-  todoInput.value = "";
+  // todoInput.value = "";
+});
 
 // //빈문자열을 추가하고싶지않을때는
 // if (todoInput.value.trim() !== "") {
