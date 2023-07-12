@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- swiper cdn css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- swiper cdn js-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <style>
+        .swiper {
+            width: 100%;
+            background-color: antiquewhite;
+            height: 200px;
+        }
+
+        .swiper .swiper-wrapper .swiper-slide {
+            width: 200px;
+            height: 100px;
+            border: 1px solid blue;
+            text-align: center;
+            line-height: 100px;
+            box-sizing: border-box;
+            font-size: 25px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: green;
+            border: 1px solid black;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 40px;
+            transition: 0.5s;
+            background-color: aqua;
+        }
+
+        /* 화살표커스텀 */
+
+        .swiper .swiper-button-prev {}
+
+        .swiper .swiper-button-next {}
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="swiper swiper1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <br>
+
+    <div class="swiper swiper2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+</body>
+
+<script>
+    const swiper = new Swiper(".swiper1", {
+
+        // direction: "vertical",
+        //한 화면에 슬라이드 몇개?
+        slidesPerView: 3,
+
+
+        // 슬라이드간 gap (px로 적용)
+        spaceBetween: 6,
+
+
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        autoplay: {
+            delay: 1000
+
+        },
+        speed: 1000,
+        scrollbar: {
+            el: ".swiper-scrollbar",
+
+        },
+
+        breakpoint: {
+            //768보다 클때
+            768: {
+                slidesPerView: 4,
+            }
+        }
+    })
+
+
+
+
+
+
+</script>
+
+</html>
